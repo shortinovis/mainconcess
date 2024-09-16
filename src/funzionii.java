@@ -4,19 +4,19 @@ public class funzionii {
 
     //aggiunta di una nuova auto
     public int aggiunta(String [] marca, String[] modello, int [] prezzo, String maarca, int preezzo, String moodello, int num){
-        num=0;
         marca[num]=maarca;
         modello[num]=moodello;
         prezzo[num]=preezzo;
-        num=num+1;
+        num++;
+        return num;
     }
     //visualizzazione di tutte le auto
-    public String visualizzazione (String [] marca, String[] modello, int [] prezzo, int num){
-        num=0;
-        num=num+1;
+    public int visualizzazione (int num){
+        num++;
+        return num;
     }
     //ricerca di un'auto tramite marca e modello;
-    public String ricerca(){
+    public String ricerca(int num, String [] marca, String [] modello, ){
 
     }
     //cancellazione di un'auto;
