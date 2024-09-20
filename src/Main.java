@@ -5,6 +5,10 @@ public class Main {
     public static void main(String[] args) {
         Scanner t = new Scanner(System.in);
         int indice;
+        String AggMarca, AggModello, AggPrezzo;
+        String [] modello = new String[100];
+        String [] prezzo = new String[100];
+        String [] marca = new String[100];
         do{
             System.out.println("1-aggiunta di una nuova auto");
             System.out.println("2-visualizzazione di tutte le auto");
@@ -18,6 +22,12 @@ public class Main {
 
             switch (indice) {
                     case 1:
+                    System.out.println("dammi nuova marca");
+                    AggMarca= t.nextLine();
+                    System.out.println("dammi nuovo modello");
+                    AggModello= t.nextLine();
+                    System.out.println("dammi nuovo prezzo");
+                    AggPrezzo= t.nextLine();
 
                     break;
                     case 2:
@@ -36,7 +46,7 @@ public class Main {
 
                     break;
                     case 7:
-                        
+
                     break;
 
             }
