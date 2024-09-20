@@ -16,15 +16,20 @@ public class funzionii {
         return num;
     }
     //ricerca di un'auto tramite marca e modello;
-    public String ricerca(int num, String [] marca, String [] modello, ){
-
+    public int ricerca(int num, String [] marca, String [] modello, String maarca, String moodello){
+        for(int i=0; i< modello.length; i++){
+            if(moodello==modello[i]){
+                num=i;
+            }
+        }
+        return num;
     }
     //cancellazione di un'auto;
-    public String cancellazione(){
+    public void cancellazione(){
 
     }
     //modifica dei dati di un'auto;
-    public String modifica(){
+    public void modifica(String modellonuovo, String marcanuova, String prezzonuovo, String [] marca, String [] modello, String [] prezzo, int num){
 
     }
     //visualizzazione delle auto in ordine crescente;
