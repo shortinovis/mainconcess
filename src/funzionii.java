@@ -30,6 +30,9 @@ public class funzionii {
     }
     //modifica dei dati di un'auto;
     public void modifica(String modellonuovo, String marcanuova, String prezzonuovo, String [] marca, String [] modello, String [] prezzo, int num){
+        marca[num]=marcanuova;
+        modello[num]=modellonuovo;
+        prezzo[num]=prezzonuovo;
 
     }
     //visualizzazione delle auto in ordine crescente;
